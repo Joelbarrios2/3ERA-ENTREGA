@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basics JL</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="https://kit.fontawesome.com/b7f30d517a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    
+    <header id="menu">         
+        <nav>
+            <a href="index.html"><img src="img/Logo.jpg" class="logo" alt="logo" width="180" height="60"></a>
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="productos.html">PRODUCTOS</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>            
+    </header>
+
+
+
+    <section class="presentacion">
+        <div class="flex-item1">
+            <h1>La ropa que siempre quisiste en un solo lugar</h1>
+            <p>
+                Manejamos productos Importados de la mejor calidad, remeras, camisas, jeans, lo que busques lo tenemos.
+            </p>
+            <div>
+                <button class="btn-principal" type ="submit">COMUNICATE</button>
+                <button class="btn-secundario" type ="submit">PRODUCTOS</button>
+            </div>
+        </div>
+        <div class="flex-item2">
+            <img src="img/tienda-de-ropa-1.jpg" alt="caratula" width="500" height="400">
+        </div>
+    </section>
+
+
+    <div class="wrapper">
+        <section class="servicios" >
+            <div class="titulo-servicios">
+                <h2>Gran Variedad De Estilos Para Todos Los Gustos</h2>
+                <p>
+                    Ademas de importar, somos fabricantes de nuestra exclusiva marca Basics JL, calidad unica, en caso de que quieras algo mas personalizado tambien hacemos estampados en remeras 100% algodon.
+                </p>
+            </div>
+            <div class="tipo-servicios">
+                <div>
+                    <i class="fa-solid fa-shirt"></i>
+                    <h3>Ropa y Diseño</h3>
+                    <p>
+                        Mandanos tu diseño y nosotros nos encargamos de hacerlo una remera.
+                    </p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-circle-user"></i>
+                    <h3>Usuarios</h3>
+                    <p>
+                        Su opinion es importante, por eso pueden mandarnos cualquier duda en la seccion de CONTACTOS.
+                    </p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-store"></i>
+                    <h3>Tienda Fisica</h3>
+                    <p>
+                        Estamos localizados en Mataderos Capital Federal.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p class="footer-content">
+            Todos los derechos de autor reservados 2022
+        </p>
+    </footer>
+    <script>
+       const menu = document.getElementById('menu');
+       window.onscroll = function(){
+           if(window.pageYOffset>10){
+               menu.style.backgroundColor='#fff';
+           }
+           else{
+               menu.style.backgroundColor='initial';
+           }
+       }
+    </script>
+</body>
+</html>
